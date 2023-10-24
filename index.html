@@ -195,7 +195,7 @@
             const unitPrice = parseFloat( document.getElementById( "unitPrice" ).value );
             const tax = parseFloat( document.getElementById( "tax" ).value );
 
-            const groundFloorConsumption = currentUnitGround - previousUnitGround;
+            const groundFloorConsumption = currentUnitGround - previousUnitGround - motorUnits;
             const firstFloorConsumption = currentUnitFirst - previousUnitFirst;
             const secondFloorConsumption = currentUnitSecond - previousUnitSecond;
 
