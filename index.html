@@ -199,7 +199,8 @@
             const firstFloorConsumption = currentUnitFirst - previousUnitFirst;
             const secondFloorConsumption = currentUnitSecond - previousUnitSecond;
 
-            const motorUnitConsumption = motorUnits * unitPrice / 3;
+
+            const motorUnitConsumption = ( motorUnits * 2 * unitPrice ) / 3;
 
             const groundFloorBill = ( groundFloorConsumption * unitPrice + motorUnitConsumption ) + ( tax / 3 );
             const firstFloorBill = ( firstFloorConsumption * unitPrice + motorUnitConsumption ) + ( tax / 3 );
